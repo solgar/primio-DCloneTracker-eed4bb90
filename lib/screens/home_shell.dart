@@ -54,6 +54,11 @@ class HomeShell extends StatelessWidget {
               selectedIcon: Icon(Icons.casino, color: d2r.gold),
               label: 'Cube',
             ),
+            NavigationDestination(
+              icon: Icon(Icons.emoji_events_outlined, color: d2r.subtleText),
+              selectedIcon: Icon(Icons.emoji_events, color: d2r.goldLight),
+              label: 'Grail',
+            ),
           ],
         ),
       ),

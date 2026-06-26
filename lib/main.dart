@@ -2,6 +2,7 @@
 // rebuild2
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'providers/grail_provider.dart';
 import 'providers/tracker_provider.dart';
 import 'router/app_router.dart';
 import 'services/tracker_service.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (ctx) => TrackerProvider(service: ctx.read<TrackerService>()),
         ),
+        ChangeNotifierProvider(create: (_) => GrailProvider()),
       ],
       child: MaterialApp.router(
         title: 'DClone Tracker',

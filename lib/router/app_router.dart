@@ -1,6 +1,7 @@
 import 'package:go_router/go_router.dart';
 import '../screens/cube_screen.dart';
 import '../screens/dclone_screen.dart';
+import '../screens/grail_screen.dart';
 import '../screens/home_shell.dart';
 import '../screens/terror_zone_screen.dart';
 
@@ -34,6 +35,14 @@ class AppRouter {
               GoRoute(
                 path: '/cube',
                 builder: (context, state) => const CubeScreen(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: '/grail',
+                builder: (context, state) => const GrailScreen(),
               ),
             ],
           ),
